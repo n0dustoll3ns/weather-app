@@ -1,4 +1,5 @@
 import React from "react";
+import WeatherBody  from "./WeatherBody/WaetherBody";
 
 const App = () => {
   return (
