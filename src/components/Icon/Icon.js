@@ -8,6 +8,18 @@ import Thermometer from "../../assets/thermometer.svg";
 
 const Icon = props => {
   switch (props.icon) {
+    case 801:
+      return <img className="Icon" src={Cloudy} />
+      break;
+    case 802:
+      return <img className="Icon" src={Cloudy} />
+      break;
+    case 803:
+      return <img className="Icon" src={Cloudy} />
+      break;
+    case 200:
+      return <img className="Icon" src={Cloudy} />
+      break;
     case 'Cloudy':
       return <img className="Icon" src={Cloudy} />
       break;

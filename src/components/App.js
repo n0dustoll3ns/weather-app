@@ -3,7 +3,7 @@ import WeatherBody from "./WeatherBody/WeatherBody";
 import './App.css';
 import weather from '../apis/api';
 import Loader from "./Loader/Loader";
-import SearchBar from './SearchBar/SearchBar';
+// import SearchBar from './SearchBar/SearchBar';
 
 
 class App extends React.Component {
@@ -59,9 +59,9 @@ class App extends React.Component {
 
     return (
       <div className="App" >
-        <React.Fragment>
+        {/* <React.Fragment>
           <SearchBar city={this.state.city} searchCity={this.searchCity}/>
-        </React.Fragment>
+        </React.Fragment> */}
         <div className="weatherContainer pt-3 pb-3">
           <h5 className="cityName">{this.state.city}</h5>
           <WeatherBody day={'Mon'} icon={icon[0]} minTemp={minTemp[0]} maxTemp={maxTemp[0]} description={description[0]} />
