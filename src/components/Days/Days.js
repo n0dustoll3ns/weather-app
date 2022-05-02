@@ -1,7 +1,7 @@
 import React from "react";
-import './Days.css'
+import './Days.css';
 
-const Days = () => {
+const Days = props => {
   return <div className="Days">
     {props.day}
   </div>
