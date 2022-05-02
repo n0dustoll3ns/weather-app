@@ -1,9 +1,9 @@
 import React from "react";
 import WeatherBody from "./WeatherBody/WeatherBody";
 import './App.css';
-import weather from '../apis/api'
-import Loader from '.Loader/Loader'
-import SearchBar from '.SearchBar/SearchBar'
+import weather from '../apis/api';
+import Loader from "./Loader/Loader";
+import SearchBar from './SearchBar/SearchBar';
 
 
 class App extends React.Component {
@@ -55,12 +55,15 @@ class App extends React.Component {
       return <Loader msg={'Loading...'} />
     }
 
-
     
 
     return (
       <div className="App" >
+        <React.Fragment>
+          <SearchBar city={this.state.city} searchCity={this.searchCity}/>
+        </React.Fragment>
         <div className="weatherContainer pt-3 pb-3">
+          <h5 className="cityName">{this.state.city}</h5>
           <WeatherBody day={'Mon'} icon={'Sun'} minTemp={15} maxTemp={25} />
           <WeatherBody day={'Tue'} icon={'Mistake'} minTemp={5} maxTemp={10} />
           <WeatherBody day={'Wed'} icon={'Snowing'} minTemp={0} maxTemp={-5} />
