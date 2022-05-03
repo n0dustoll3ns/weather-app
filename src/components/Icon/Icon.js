@@ -18,22 +18,31 @@ const Icon = props => {
       return <img className="Icon" src={Cloudy} />
       break;
     case 200:
-      return <img className="Icon" src={Cloudy} />
+      return <img className="Icon" src={Rain} />
       break;
-    case 'Cloudy':
-      return <img className="Icon" src={Cloudy} />
+    case 201:
+      return <img className="Icon" src={Rain} />
       break;
-    case 'Rain':
-      return <img className="Icon" src={Rain} />;
+    case 202:
+      return <img className="Icon" src={Rain} />
       break;
-    case 'Sun':
-      return <img className="Icon" src={Sun} />;
+    case 600:
+      return <img className="Icon" src={Snowing} />
       break;
-    case 'Snowing':
-      return <img className="Icon" src={Snowing} />;
+    case 601:
+      return <img className="Icon" src={Snowing} />
+      break;
+    case 602:
+      return <img className="Icon" src={Snowing} />
+      break;
+    case 610:
+      return <img className="Icon" src={Snowing} />
       break;
     default:
-      return <img className=" Icon" src={Thermometer} alt={Thermometer} />
+      return <React.Fragment>
+        <img className=" Icon" src={Thermometer} alt={Thermometer} />
+        <h5>{props.description}</h5>
+      </React.Fragment>
   }
 
 
