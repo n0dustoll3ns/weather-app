@@ -13,7 +13,7 @@ class SearchBar extends React.Component {
   }
 
   onSubmit = e => {
-    e.prventDefault();
+    e.preventDefault();
     if (this.state.city === '') {
       alert('City can not be empty')
     } else {

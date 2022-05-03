@@ -15,28 +15,42 @@
   margin-right: 15px;
   text-align: center;
   border-bottom: 1px solid #17a2b8;
+  border-radius: 6px;
 }
 
-.SearchBar input:focus{
+.SearchBar button {
+  border-radius: 6px;
+  background-color:rgba(241, 150, 142, 0.65);
+  border-color: #eee;
+  color: #eee;
+}
+
+.SearchBar h5 {
+  font: bold 17px Arial;
+  color: #eee;
+}
+
+.SearchBar input:focus {
   outline: 0;
 }
 
-.SearchBar .SearchBarChildren{
-  top:50%;
+.SearchBar .SearchBarChildren {
+  top: 50%;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
 }
 
-.SearchBar .SearchBarChildren .formSearchCity{
+.SearchBar .SearchBarChildren .formSearchCity {
   display: flex;
+
 }
 
-@media(min-width: 1390px){
-.SearchBar{
-  width: 30%;
-  height: 100vh;
-  
-}
+@media(min-width: 1390px) {
+  .SearchBar {
+    width: 30%;
+    height: 100vh;
+
+  }
 
 }
