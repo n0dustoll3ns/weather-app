@@ -4,7 +4,7 @@ import './App.css';
 import weather from '../apis/api';
 import Loader from "./Loader/Loader";
 import SearchBar from './SearchBar/SearchBar';
-
+import Header from "./Header/Header";
 
 class App extends React.Component {
   constructor(props) {
@@ -59,6 +59,7 @@ class App extends React.Component {
 
     return (
       <div className="App" >
+        <Header></Header>
         <React.Fragment>
           <SearchBar city={this.state.city} searchCity={this.searchCity}/>
         </React.Fragment>
