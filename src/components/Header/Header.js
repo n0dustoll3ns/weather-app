@@ -1,16 +1,27 @@
 import React from "react";
-import SearchBar from "../SearchBar/SearchBar";
+import './Header.css'
+
+
 const Header = () => {
   return (<header>
-    <ul>
-      <li><a href="">Logo</a></li>
-      <li><a href="">on map</a></li>
-      <li><a href="">Forecast days</a></li>
-      <li><a href="">Forecast month</a></li>
-      <li><SearchBar></SearchBar></li>
-      <li><a href="">Profile</a></li>
-    </ul>
-  </header>  );
+    <nav>
+      <ul>
+        <li><a href="">Logo</a></li>
+        <li><a href="">Forecast 10 days</a></li>
+        <li><a href="">Forecast month</a></li>
+        <li><a href="">on Map</a></li>
+        <li>
+          <form>
+            <input type="search" placeholder="Your city" />
+          </form>
+        </li>
+        <li><a href="">Profile</a></li>
+      </ul>
+    </nav>
+    <div className="breadcrumbs">
+      UK .. London ..
+    </div>
+  </header>);
 }
- 
+
 export default Header;

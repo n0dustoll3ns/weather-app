@@ -36,7 +36,7 @@ class App extends React.Component {
   render() {
 
     const minTemp = this.state.temp.map(el => {
-      return parseInt(el.low_temp) 
+      return parseInt(el.low_temp)
     })
 
     const maxTemp = this.state.temp.map(el => {
@@ -55,22 +55,40 @@ class App extends React.Component {
       return <Loader msg={'Loading...'} />
     }
 
-    
+
 
     return (
       <div className="App" >
         <Header></Header>
-        <React.Fragment>
-          <SearchBar city={this.state.city} searchCity={this.searchCity}/>
-        </React.Fragment>
-        <div className="weatherContainer pt-3 pb-3">
-          <h5 className="cityName">{this.state.city}</h5>
-          <WeatherBody day={'Mon'} icon={icon[0]} minTemp={minTemp[0]} maxTemp={maxTemp[0]} description={description[0]} />
-          <WeatherBody day={'Tue'} icon={icon[1]} minTemp={minTemp[1]} maxTemp={maxTemp[1]} description={description[1]} />
-          <WeatherBody day={'Wed'} icon={icon[2]} minTemp={minTemp[2]} maxTemp={maxTemp[2]} description={description[2]}/>
-          <WeatherBody day={'Thu'} icon={icon[3]} minTemp={minTemp[3]} maxTemp={maxTemp[3]} description={description[3]} />
-          <WeatherBody day={'Fri'} icon={icon[4]} minTemp={minTemp[4]} maxTemp={maxTemp[4]} description={description[4]} />
-        </div>
+        <main>
+          <div className="summary">
+            <div className="tomorrow">
+              tomorrow is gonna be Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </div>
+            <div className="week">
+              about 2-3 days layet it gonna be Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+          <div className="detail">
+            <div className="today">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente temporibus, aut quod deleniti ipsum dicta excepturi officia, molestias corporis voluptatibus ipsam doloremque ut, mollitia obcaecati odio ipsa et velit fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. A optio commodi quae adipisci? Quisquam quasi non vitae et exercitationem sequi eum ea. Explicabo dolore necessitatibus nemo dolorem et non repudiandae!</div>
+            <div className="map">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia reprehenderit quis, minus enim non ipsa earum, porro quisquam fugit fuga quasi consectetur voluptas. Facere veritatis reiciendis voluptate officiis quis? Fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempora, aliquid harum minus dignissimos itaque incidunt, dolores eveniet explicabo sunt facilis, amet temporibus. Facilis enim earum magnam perspiciatis saepe eveniet!
+            </div>
+          </div>
+          <div className="ten-days">
+            Very very long Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatum quos placeat accusantium assumenda soluta, mollitia quaerat hic eum quia! Est sint dicta similique suscipit nobis quidem, ducimus fugit tempore?
+          </div>
+          <div className="miscellaneous">
+            <div className="daylight">Daylight</div>
+            <div className="other-towns">Other Towns</div>
+            <div className="months">Months</div>
+          </div>
+        </main>
+        <section>
+          <div className="coming">
+          </div>
+        </section>
       </div>
     )
   }

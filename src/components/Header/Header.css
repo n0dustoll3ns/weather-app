@@ -1,12 +1,25 @@
-header{
-  height: 250px;
+header {
+  font-family: 'YS Text', arial, sans-serif;
+  font-weight: bold;
+}
+nav{
+text-align: center;
+}
+nav ul { 
   
+  margin: 0 auto;
+  white-space: nowrap;
 }
 
-header ul{
-  display: flex;
+nav li {
+  width: 16%;
+  display: inline-block;
+
 }
 
-header li{
-  
+.breadcrumbs {
+  width: 1390px;
+  margin: 0 auto;
+  text-align: left;
+  height: 42px;
 }
