@@ -14,12 +14,11 @@ const Detail = () => {
         </section>
         <section className="time-and-yesterday-data">
           <div className="temp">+16°</div>
-          <div className="temp-icon">
-            <img src={Snow} alt="sun" className="icon" />
+          <img src={Snow} alt="sun" className="icon" />
+          <div className="feelings">
+            <div className="orient">Partly Cloud</div>
+            <div className="feels-like">Feels like +12°</div>
           </div>
-          <div className="temp">Partly Cloud</div>
-          <div className="feels-like">Feels like +12°</div>
-
         </section>
 
       </div>

@@ -26,9 +26,19 @@ section button {
   border: 1px solid rgb(165, 165, 167);
 }
 
-.time-and-yesterday-data div {
-  display: inline-block;
+section .temp {
   font-size: 48px;
-  line-height: 48px;
+  display: inline-block;
 }
 
+.orient {
+  display: block;
+}
+
+.feelings {
+  display: inline-block;
+}
+
+.feels-like {
+  display: inline-block;
+}
