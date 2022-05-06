@@ -5,7 +5,7 @@ import weather from '../apis/api';
 import Loader from "./Loader/Loader";
 import SearchBar from './SearchBar/SearchBar';
 import Header from "./Header/Header";
-
+import Summary from "./Summary/Summary";
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -61,14 +61,7 @@ class App extends React.Component {
       <div className="App" >
         <Header></Header>
         <main>
-          <div className="summary">
-            <div className="tomorrow">
-              tomorrow is gonna be Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            </div>
-            <div className="week">
-              about 2-3 days layet it gonna be Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            </div>
-          </div>
+        <Summary></Summary>
           <div className="detail">
             <div className="today">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente temporibus, aut quod deleniti ipsum dicta excepturi officia, molestias corporis voluptatibus ipsam doloremque ut, mollitia obcaecati odio ipsa et velit fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. A optio commodi quae adipisci? Quisquam quasi non vitae et exercitationem sequi eum ea. Explicabo dolore necessitatibus nemo dolorem et non repudiandae!</div>

@@ -18,14 +18,11 @@ main {
   margin: 0 auto;
 }
 
-.summary,
 .detail,
 .miscellaneous {
   display: flex;
 }
 
-.tomorrow,
-.week,
 .today,
 .map,
 .ten-days,
