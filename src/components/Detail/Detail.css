@@ -1,0 +1,34 @@
+.detail {
+  display: flex;
+}
+
+.today,
+.map {
+  flex-basis: 640px;
+  height: auto;
+  padding: 14px;
+  margin: 14px;
+  border: 1px solid #eee;
+  border-radius: 7px;
+  background-color: #31313e;
+}
+
+section.title {
+  font-size: x-large;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between
+}
+
+section button {
+  border-radius: 19px;
+  background-color: #6f6f82;
+  border: 1px solid rgb(165, 165, 167);
+}
+
+.time-and-yesterday-data div {
+  display: inline-block;
+  font-size: 48px;
+  line-height: 48px;
+}
+

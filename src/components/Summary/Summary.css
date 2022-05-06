@@ -15,7 +15,7 @@
   position: relative;
 }
 
-img.icon{
+.summary img.icon{
   position: absolute;
   top: 12px;
   left: 9px;

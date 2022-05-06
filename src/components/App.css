@@ -18,13 +18,10 @@ main {
   margin: 0 auto;
 }
 
-.detail,
 .miscellaneous {
   display: flex;
 }
 
-.today,
-.map,
 .ten-days,
 .daylight,
 .other-towns,
