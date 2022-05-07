@@ -1,9 +1,20 @@
+ul,
+li {
+  list-style: none;
+  background-color: #31313e;
+
+}
+
 .detail {
   display: flex;
+  z-index: 2;
+
 }
 
 .today,
 .map {
+  z-index: 2;
+
   flex-basis: 640px;
   height: auto;
   padding: 14px;
@@ -29,6 +40,8 @@ section button {
 section .temp {
   font-size: 48px;
   display: inline-block;
+  padding: 0 5px;
+
 }
 
 .orient {
@@ -37,8 +50,63 @@ section .temp {
 
 .feelings {
   display: inline-block;
+  padding: 0 5px;
+
 }
 
 .feels-like {
+  display: inline-block;
+}
+
+.properties div {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+section.properties {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+section.hourly {
+  z-index: 2;
+  position: relative;
+}
+
+.swiper-btn {
+  position: absolute;
+  height: fit-content;
+  text-align: center;
+  top: 50%;
+  z-index: 2;
+
+  background-color: rgba(245, 245, 220, 0.203);
+  border: 1px solid rgb(165, 165, 167);
+  border-radius: 19px;
+}
+
+.hourly .next {
+  position: absolute;
+  top: 50%;
+  right: 21px;
+}
+
+.hourly .swiper-wrapper {
+  right: -30px;
+  position: relative;
+  display: flex;
+  width: 85%;
+  height: 100%;
+  z-index: -1;
+  padding: 5px;
+  margin: 0;
+  list-style: none;
+  box-sizing: content-box;
+  overflow: hidden;
+}
+
+li.hourly {
+  padding: 5px;
+  text-align: center;
   display: inline-block;
 }
