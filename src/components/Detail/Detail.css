@@ -2,26 +2,22 @@ ul,
 li {
   list-style: none;
   background-color: #31313e;
-
 }
 
 .detail {
   display: flex;
-  z-index: 2;
-
 }
 
 .today,
 .map {
-  z-index: 2;
-
-  flex-basis: 640px;
+  flex-basis: 580px;
   height: auto;
   padding: 14px;
   margin: 14px;
   border: 1px solid #eee;
   border-radius: 7px;
   background-color: #31313e;
+  max-width: 50%;
 }
 
 section.title {
@@ -88,14 +84,14 @@ section.hourly {
 .hourly .next {
   position: absolute;
   top: 50%;
-  right: 21px;
+  right: 18px;
 }
 
 .hourly .swiper-wrapper {
   right: -30px;
   position: relative;
   display: flex;
-  width: 85%;
+  width: 45%;
   height: 100%;
   z-index: -1;
   padding: 5px;

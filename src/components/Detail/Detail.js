@@ -33,7 +33,16 @@ const Detail = () => {
         <section className="hourly">
           <div className="swiper-btn prev">⏴</div>
           <ul className="swiper-wrapper">
-          <li className="hourly">
+            <li className="hourly">
+              <div className="hour-time">
+                20:00
+              </div>
+              <img src={Sun} alt="" className="hour-icon" />
+              <div className="hour-temp">
+                +9°
+              </div>
+            </li>
+            <li className="hourly">
               <div className="hour-time">
                 20:00
               </div>
