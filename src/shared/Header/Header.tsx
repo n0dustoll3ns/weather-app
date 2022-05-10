@@ -9,7 +9,7 @@ interface Props { }
 export const Header = (prop: Props) => {
   const options = [
     { value: 'chocolate', label: 'Chocolate' },
-    { value: 'strawberry', label: 'Strawberry' },
+    { value: 'strawberry', label: 'Str11awberry' },
     { value: 'vanilla', label: 'Vanilla' }
   ]
 
