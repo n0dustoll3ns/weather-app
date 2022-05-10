@@ -9,15 +9,36 @@
   border-radius: $border-radius;
 }
 
-.top__block{
+.top__block {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   margin-bottom: 30px;
-  svg{
+
+  svg {
     width: 119px;
     height: 119px;
   }
-  
+}
+
+.this__temp {
+  font-size: 96px;
+  font-weight: 500;
+  color: $primary-color;
+}
+
+.this__day_day {
+  font-size: 40px;
+  color: $light-color;
+}
+
+
+.bottom__block {
+
+  .this__city,
+  .this__time {
+    color: $base-color;
+    font-size: 25px;
+  }
 }
