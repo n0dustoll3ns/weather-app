@@ -8,12 +8,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/month-statistics" element={<MonthStatistics />} />
-
-
       </Routes>
     </div>
   );
