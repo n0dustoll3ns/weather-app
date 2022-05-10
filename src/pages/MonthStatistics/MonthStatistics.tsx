@@ -1,11 +1,14 @@
 import React from 'react';
-import s from './components/Home.module.scss';
-interface Props {}
- 
-export const Home = (props: Props) => {
+
+import s from './components/MonthStatistics.module.scss'; 
+
+interface Props {
+}
+
+export const MonthStatistics = (props: Props) => {
   return (
     <div className={s.home}>
-      Home
+      Month Statistics
     </div>
   );
 }

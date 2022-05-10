@@ -1,7 +1,10 @@
 import React from 'react';
-import s from './components/Home.module.scss';
-interface Props {}
- 
+
+import s from './components/Home.module.scss'; 
+
+interface Props {
+}
+
 export const Home = (props: Props) => {
   return (
     <div className={s.home}>
