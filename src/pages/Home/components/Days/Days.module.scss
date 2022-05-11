@@ -21,26 +21,35 @@
   width: 149px;
   transition: 0.3s;
   cursor: pointer;
-}
 
-.day {
-  margin-bottom: 7px;
-  font-size: 18px;
-}
 
-.day__info {
-  font-size: 14px;
-  margin-bottom: 12px;
-  color: $base-color;
-}
+  .day {
+    margin-bottom: 7px;
+    font-size: 18px;
+  }
+  
+  .day__info {
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: $base-color;
+  }
+  
+  .img {
+    margin-bottom: 12px;
+  }
+  
+  .temp__day {
+    font-size: 18px;
+  }
+  
+  .temp__night {
+    font-size: 13px;
+    color: $base-color;
+    margin-bottom: 6px;
+  }
 
-.img {
-  margin-bottom: 12px;
-}
-
-.temp__day {
-  font-style: 18px;
-}
-.temp__day {
-  font-style: 13px;
+  .info{
+    font-size: 13px;
+    color: $base-color;
+  }
 }
