@@ -2,16 +2,20 @@ import React, { useEffect, useState } from "react";
 import Select from 'react-select'
 
 import { GlobalSvgSelector } from "../../assets/icons/global/GlobalSvgSelector";
+import { useTheme } from "../../hooks/useTheme";
 import s from './Header.module.scss'
 
 interface Props { }
 
 export const Header = (prop: Props) => {
+  const theme = useTheme = useTheme
   const options = [
     { value: 'city-1', label: 'Moscow' },
     { value: 'city-2', label: 'Saint-P' },
     { value: 'city-3', label: 'Novgorod' }
   ]
+
+  const [theme, setTheme] = useState('light')
 
   const colorStyles = {
     control: (styles: any) => ({
@@ -25,10 +29,9 @@ export const Header = (prop: Props) => {
     })
   };
 
-  const [theme, setTheme] = useState('light')
 
   function changeTheme() {
-    setTheme(theme === 'light' ? 'dark' : 'light');
+    theme.changeTheme(theme.theme==='light'?dark:'lught')
   }
 
   useEffect(() => {

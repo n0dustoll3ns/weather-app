@@ -7,5 +7,5 @@ interface Props {
 
 export const ThemeContext = createContext({
   theme: '',
-  changeTheme: () => { }
+  changeTheme: () => {  }
 })
