@@ -1,29 +1,13 @@
-import s from './Days.module.scss';
+import React from "react";
+import Select from 'react-select'
+import { GlobalSvgSelector } from "../../../../assets/icons/global/GlobalSvgSelector";
 
-interface Props {}
+import s from './Days.module.scss'
 
-export const Tabs = (props: Props) => {
-  const tabs = [
-    {
-      value: 'На неделю',
-    },
-    {
-      value: 'На 10 дней',
-    },
-    {
-      value: 'На месяц',
-    },
-  ];
-  return (
-    <div className={s.tabs}>
-      <div className={s.tabs__wrapper}>
-        {tabs.map(tab => (
-          <div className={s.tab} key={tab.value}>
-            {tab.value}
-          </div>
-        ))}
-      </div>
-      <div className={s.cancel}>Отменить</div>
-    </div>
-  );
-};
+interface Props { }
+
+export const Tabs = (prop: Props) => {
+  return <div className={s.this__day}>
+
+  </div>
+}

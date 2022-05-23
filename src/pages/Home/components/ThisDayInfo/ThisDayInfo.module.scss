@@ -1,13 +1,14 @@
 @import '../../../../styles/variables.scss';
 
+
 .this__day_info {
   position: relative;
   padding: 40px;
   max-width: 750px;
   width: 100%;
-  box-shadow: $box-shadow;
+  background: $lite-backgroungd;
+  box-shadow: $box-shadow ;
   border-radius: $border-radius;
-  background: var(#{--components-background-default});
 }
 
 .item {
@@ -15,9 +16,11 @@
   display: flex;
   align-items: center;
   margin-bottom: 25px;
-  &:last-of-type {
+
+  &last-of-type {
     margin-bottom: 0;
   }
+
   .indicator,
   .indicator__name {
     margin-right: 20px;
@@ -38,11 +41,13 @@
   .indicator__value {
     font-size: 14px;
   }
+
   .indicator__name {
     color: $base-color;
   }
+
   .indicator__value {
-    color: var(#{--text-color-default});
+    color: $light-color;
   }
 }
 

@@ -1,4 +1,3 @@
-import { Days } from './components/Days/Days';
 import s from './components/Home.module.scss';
 import { ThisDay } from './components/ThisDay/ThisDay';
 import { ThisDayInfo } from './components/ThisDayInfo/ThisDayInfo';
@@ -13,7 +12,6 @@ export const Home = (props: Props) => {
         <ThisDay />
         <ThisDayInfo />
       </div>
-      <Days />
     </div>
   );
 }
