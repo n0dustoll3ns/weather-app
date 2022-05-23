@@ -1,4 +1,3 @@
-import React from 'react';
 import { Card } from './Card';
 import s from './Days.module.scss';
 import { Tabs } from './Tabs';
