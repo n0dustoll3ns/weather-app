@@ -33,7 +33,7 @@ export const Popup = ({}: Props) => {
       <div className={s.blur}></div>
       <div className={s.popup}>
         <div className={s.day}>
-          <div className={s.day__temp}>20°</div>
+          <div className={s.day__temp}>12°</div>
           <div className={s.day__name}>Среда</div>
           <div className={s.img}>
             <GlobalSvgSelector id="sun" />
