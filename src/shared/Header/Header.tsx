@@ -3,11 +3,13 @@ import Select from 'react-select'
 import SingleValue from "react-select/dist/declarations/src/components/SingleValue";
 
 import { GlobalSvgSelector } from "../../assets/icons/global/GlobalSvgSelector";
+import { useTheme } from "../../hooks/useTheme";
 import s from './Header.module.scss'
 
 interface Props { }
 
 export const Header = (prop: Props) => {
+  const themeObj = useTheme();
   const options = [
     { value: 'city-1', label: 'Moscow' },
     { value: 'city-2', label: 'Saint-P' },
